@@ -3,16 +3,16 @@ import random
 import math
 import time
 
-# Initialize the game engine and create the window.
+
 pygame.init()
 WIDTH, HEIGHT = 2000, 1000
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Slime dodge")
 
-# Load the background image and scale it to fit the full game window.
+
 BG = pygame.transform.scale(pygame.image.load("backgorund.jpeg"), (WIDTH, HEIGHT))
 
-# Player setup: size, position, and image.
+
 PLAYER_WIDTH, PLAYER_HEIGHT = 100, 100
 player = pygame.Rect(100, HEIGHT - PLAYER_HEIGHT - 100, PLAYER_WIDTH, PLAYER_HEIGHT)
 player_image = pygame.image.load("player1.png").convert_alpha()
